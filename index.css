@@ -2,7 +2,12 @@
 @import url(https://db.onlinewebfonts.com/c/f7d1b2995a6dff7abcda304d226aa67d?family=Helvetica+W01+Bold); /*font-family: "Helvetica W01 Bold";*/
 @import url(https://db.onlinewebfonts.com/c/c5bd605b45237a12c99133fa9d7cae49?family=Helvetica+W01+Roman); /*font-family: "Helvetica W01 Roman";*/
 
-html{ 
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
     scroll-behavior: smooth; 
 }
 *{
@@ -82,7 +87,7 @@ ul{
     display: inline-block;
     width: 20px;
     height: 20px;
-    left: 200px;
+    left: 190px;
     top: 15px;
 }
 
@@ -249,4 +254,48 @@ ul{
 }
 #email, #psw{
     border-radius: 100px;
+}
+
+/* para celular */
+@media screen and (max-width: 1700px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .navbar li{
+        display:block;
+        white-space: nowrap;
+    }
+    .body{
+        padding-left: 3vh;
+        padding-right: 5vw;
+    }
+    .body > *:first-child {
+        font-size: 90px;
+    }
+    .miviva{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 15px;
+        
+    }
+    .conhecimentos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        width: 50vw;
+    }
+    #contato iframe{
+        width: 100%;
+        height: 50%;
+    }
 }
