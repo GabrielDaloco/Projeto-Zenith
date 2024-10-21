@@ -1,0 +1,252 @@
+@import url(https://db.onlinewebfonts.com/c/77d394fa0c1103c648f880b77cb4a32f?family=Futura+LT+W01+Medium); /*font-family: "Futura LT W01 Medium";*/
+@import url(https://db.onlinewebfonts.com/c/f7d1b2995a6dff7abcda304d226aa67d?family=Helvetica+W01+Bold); /*font-family: "Helvetica W01 Bold";*/
+@import url(https://db.onlinewebfonts.com/c/c5bd605b45237a12c99133fa9d7cae49?family=Helvetica+W01+Roman); /*font-family: "Helvetica W01 Roman";*/
+
+html{ 
+    scroll-behavior: smooth; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* error notice */
+#error{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: "Helvetica W01 Roman";
+}
+/* navbar */
+.navbar{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vh 20vh 2vh 20vh;
+}
+.navbar li{
+    display: inline;
+}
+.navbar a{
+    font-family: "Futura LT W01 Medium";
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+}
+.navbar img{
+    height: auto;
+    width: auto;
+}
+.navbar button{
+    font-family: "Helvetica W01 Roman";
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.navbar button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+#search{
+    position: relative;
+    margin: 5px;
+}
+#search input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#search svg{
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    left: 200px;
+    top: 15px;
+}
+
+/* body */
+
+.body{
+    font-family: "Helvetica W01 Roman";
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(src/wiximage.webp);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: white;
+    padding-top: 10vh;
+    padding-left: 6vh;
+    font-size: 18px;
+}
+.body > *:first-child {
+    font-size: 113px;
+    padding-bottom: 5vh;
+}
+.body h1{
+    font-family: "Helvetica W01 Bold";
+}
+.miviva{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    gap: 5vh;
+    justify-content: center;
+    text-align: justify;
+    padding-bottom: 10vh;
+}
+.card{
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card h1{
+    padding-bottom: 3vh;
+}
+
+/* body 2 */
+
+.body2{
+    font-family: "Helvetica W01 Roman";
+    background-color: #f7f7f7;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    font-size: 18px;
+    color: black;
+}
+.body2 > *:first-child {
+    font-size: 50px;
+    padding-bottom: 5vh;
+    text-align: center;
+    font-weight: 700;
+}
+.conhecimentos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 5vw;
+}
+.conhecimentos svg{
+    height: 50px;
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 15vw;
+}
+.card2 p{
+    padding-top: 2vh;
+}
+.card2 h2{
+    font-size: 25px;
+    padding-top: 2vh;
+    font-weight: 700;
+}
+
+/* footer */
+
+.footer{
+    font-family: "Helvetica W01 Roman";
+    background-color: white;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.endefone{
+    display: flex;
+    gap: 10vw;
+    padding-bottom: 5vh;
+}
+#contato{
+    width: 60vw;
+}
+#contato h1{
+    font-size: 60px;
+    padding-bottom: 2vh;
+    font-weight: 700;
+}
+#contato h2{
+    font-weight: 700;
+}
+#contato iframe{
+    width: 100%;
+}
+
+/* modal */
+.modal-content{
+    color: black;
+    font-family: "Helvetica W01 Bold";
+}
+.modal-content #form{
+    margin-bottom: 7vh;
+}
+.modal-content input{
+    color: black;
+}
+.modal-content h4{
+    font-size: 50px;
+}
+.modal-content label{
+    font-size: 15px;
+}
+.modal-content .login{
+    font-family: "Helvetica W01 Roman";
+    width: 180px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    transition: 0.4s;
+    text-align: center;
+}
+.modal-content .login:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.modal-content .cancel{
+    font-family: "Helvetica W01 Roman";
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.4s;
+    text-align: center;
+}
+#email, #psw{
+    border-radius: 100px;
+}
