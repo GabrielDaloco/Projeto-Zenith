@@ -244,9 +244,9 @@ ul{
     font-family: "Helvetica W01 Roman";
     width: 100px;
     height: 40px;
-    background-color: black;
-    color: white;
-    border: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
     border-radius: 10px;
     font-size: 15px;
     transition: 0.4s;
