@@ -257,7 +257,7 @@ ul{
 }
 
 /* para celular */
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1300px) {
     .navbar{
         display: flex;
         flex-direction: column;
